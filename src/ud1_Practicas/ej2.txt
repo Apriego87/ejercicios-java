@@ -1,0 +1,12 @@
+casa = sí
+mi-casa = no
+mi*casa = no
+micasa1
+_MES = no
+MES_1 = sí
+MES%UNO = no
+mes$1 = sí
+a980 = sí
+890a = no
+_año90 = posible, pero no recomendable usar Ñ
+$a890 = sí

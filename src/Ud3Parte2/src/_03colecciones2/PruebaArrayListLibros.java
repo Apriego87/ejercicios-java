@@ -1,0 +1,44 @@
+package _03colecciones2;
+// PruebaListaLibros.java: prueba de la clase ArrayListLibros
+
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
+public class PruebaArrayListLibros {
+  public static void main(String args[]) {
+  	Persona p1 = new Persona(435762, 31, "Javier", "Hernandez Perez");
+    Fecha f1 = new Fecha(16,11,2001);
+    Libro l1 = new Libro("Introducci�n a Java",p1, 
+                         "0-13-031997-X",586,3,"Prentice-Hall","Madrid-Espa�a",f1);
+                         
+    Libro l2 = new Libro("Beginning Java",p1, 
+                         "0-13-031997-X",516,3,"Addison","Madrid-Espa�a",f1);                     
+    Libro l3 = new Libro("Avanzado Java",p1, 
+                         "0-13-031997-X",546,3,"McGraw-Hill","Madrid-Espa�a",f1);
+    
+                     
+    
+    ArrayListLibros a= new ArrayListLibros();
+    a.insertarOrden(l1);
+    a.insertarOrden(l2);
+    a.insertarOrden(l3);
+
+    a.ordenarPorTit();
+
+  System.out.println(a);
+    
+ /*   int indice=a.buscar("AVANZADO");
+    System.out.println(indice+1);
+    if (indice != -1)  {
+    	            l3 = a.recuperar(indice+1);
+    	            System.out.println(l3);
+                }
+    else
+     System.out.println("No encontrado"); 
+    
+  /*  a.eliminar(2);
+    System.out.println("Tras eliminar el 2 \n");
+    System.out.println(a);*/
+  }
+}
